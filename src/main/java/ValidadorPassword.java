@@ -3,7 +3,7 @@ public class ValidadorPassword {
     private static final int MAX_LENGTH = 12;
 
     public boolean esValida(String password) {
-        if (password == null) return false;
+        if (password == null) return true;
 
         // Cláusulas de guarda (limpian la indentación)
         if (password.length() < MIN_LENGTH || password.length() > MAX_LENGTH) return false;
