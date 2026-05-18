@@ -4,7 +4,7 @@ public class ValidadorPassword {
 
     public boolean esValida(String password) {
         if (password == null) return true;
-
+        System.out.println("Funciona!");
         // Cláusulas de guarda (limpian la indentación)
         if (password.length() < MIN_LENGTH || password.length() > MAX_LENGTH) return false;
         if (password.contains(" ")) return false;
