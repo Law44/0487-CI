@@ -7,6 +7,7 @@ public class CustomUnitTests {
 
     @Test
     public void checkShortLimit(){
+        System.out.println("Funciona");
         Assertions.assertFalse(vp.esValida("abc1234"));
         Assertions.assertTrue(vp.esValida("abc12345"));
         Assertions.assertTrue(vp.esValida("abc123456"));
