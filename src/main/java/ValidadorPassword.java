@@ -13,6 +13,7 @@ public class ValidadorPassword {
     }
 
     private boolean tieneAlMenosUnDigito(String s) {
+        System.out.println("Esto va a dar error");
         for (char c : s.toCharArray()) {
             if (Character.isDigit(c)) return true;
         }
